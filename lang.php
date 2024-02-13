@@ -1,4 +1,5 @@
 <?php
+include($_SERVER["DOCUMENT_ROOT"]."/maintenance.php");
 function ms($en, $et) {
 	if ((!empty($_COOKIE["lang"])) && ($_COOKIE["lang"] == "et-EE")) {
 		return $et;
@@ -37,4 +38,3 @@ function n() {
  	}
 }
 
-?>
