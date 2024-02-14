@@ -43,7 +43,7 @@ olnud ilmumise ajal dokumenteeritud).</p>
     <li>&lt;nimi otsustamisel&gt; - its</li>
 </ul>
 <h2>Millal te alustasite nende versioonide loomist?</h2>
-<p>Seda aega millal ma alustasin arvuti avastamist ja kasutamist võiksin nimetada selle kõige alguseks.  Kuid kõige esimese versiooni, millel oli logoga taustapilt tegin ma 2013 aastal, seega veidi vähem kui 7 aastat tagasi.</p>
+<p>Seda aega millal ma alustasin arvuti avastamist ja kasutamist võiksin nimetada selle kõige alguseks.  Kuid kõige esimese versiooni, millel oli logoga taustapilt tegin ma 2013 aastal, seega veidi vähem kui <?= date("Y")-2013 ?> aastat tagasi.</p>
 <h2>Kuidas seda veebilehte kasutada?</h2>
 <p>Siit veebilehelt leiate kõik Markuse arvuti asjade versioonid. Avalehel näete erinevaid versioone, millel saate klõpsata lisainfo saamiseks. Klõpsates aasta peale näete kõiki sellel aastal ilmunud versioone. Saate klõpsata ka nupul "Kuva kõik versioonid", et näha tervet versioonide ajalugu. Versioonivaates näete ka tausapilte ja/või kuvatõmmiseid versioonist, mida saate klõpsates suurendada. Saate kasutada ka linke "&lt; Tagasi" või "Edasi &gt;", et navigeerida versioonide vahel.</p>
 <p>See veebileht võimaldab ka moderaatoril hõlpsasti andmeid lisada, eemaldada ja asendada.</p>
