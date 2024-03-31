@@ -1,6 +1,9 @@
 <?php
 include($_SERVER["DOCUMENT_ROOT"]."/maintenance.php");
 function ms($en, $et) {
+	if (date("Y-m-d") == "2024-04-01") {
+		return gibberish(strlen($en));
+	}
 	if ((!empty($_COOKIE["lang"])) && ($_COOKIE["lang"] == "et-EE")) {
 		return $et;
 	} else {
@@ -38,3 +41,11 @@ function n() {
  	}
 }
 
+function gibberish($length) {
+	$charset = "abcdefghijklmnopqrstuvwxyz ";
+	$out = "";
+	for ($i = 0; $i < $length; $i++) {
+		$out .= substr($charset, rand(0, strlen($charset) - 1), 1);
+	}
+	return $out;
+}

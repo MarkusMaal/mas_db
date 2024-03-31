@@ -1,5 +1,6 @@
 <?php
 	if(session_status()!=PHP_SESSION_ACTIVE) session_start();
+
 ?>
 <?php include("lang.php");
 	  $rec = ms(" record", " kirje");?>

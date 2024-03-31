@@ -1,6 +1,5 @@
 <?php include("../head.php") ?>
 		<?php
-
 		include($_SERVER["DOCUMENT_ROOT"] . "/mas_db/connect.php");
 		//test if connection failed
 		if(mysqli_connect_errno()){
@@ -35,6 +34,11 @@
 				$name = $row[4];
 				$descript = $row[5];
 				$mini = $row[6];
+
+				if (date("Y-m-d") == "2024-04-01") {
+					$name = gibberish(strlen($name));
+					$descript = gibberish(strlen($descript));
+				}
 				$paper_query = "SELECT DISTINCT * FROM mas_wallpapers LEFT JOIN mas_db ON mas_wallpapers.VERSIOONI_ID WHERE mas_wallpapers.VERSIOONI_ID = " . $id . ";";
 				$result2 = mysqli_query($connection, $paper_query);
 				echo '<hr/>';
@@ -109,6 +113,11 @@
 				}
 			}
 			while ($row = mysqli_fetch_array($result)) {
+
+				if (date("Y-m-d") == "2024-04-01") {
+					$row[3] = ucfirst(gibberish(strlen($row[3])));
+					$row[4] = ucfirst(gibberish(strlen($row[4])));
+				}
 				echo '<h2>' . $row[3] . '</h2>';
 				if ($row[5] == "1") {
 					echo '<p>(Miniversioon)</p>';
@@ -160,6 +169,9 @@
 				$suffix = "";
 				if ($mini == "1") {
 					$suffix = " [M]";	
+				}
+				if (date("Y-m-d") == "2024-04-01") {
+					$row[4] = ucfirst(gibberish(strlen($row[4])));
 				}
 				echo '<a style="color: #77b;" class="collection-item" href="index.php?id=' . $row[0] . '">' . $row[1] . "&nbsp;-&nbsp;" . $row[2] . " " . $row[4]  . $suffix .  '<span style="color: #77b;" class="secondary-content">' . $row["AASTA"] . '</span></a>';
 				$current++;
