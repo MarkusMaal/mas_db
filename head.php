@@ -27,6 +27,7 @@
       					<ul id="nav-mobile" class="right hide-on-med-and-down" style="padding-bottom: 2em;">
 							<li <?php echo (str_contains($_SERVER["REQUEST_URI"], "toq")?"class=\"active\"":""); ?>><a style="padding-top: 1.2em;" href="/mas_db/toq">Sisukord</a></li>
 							<li <?php echo (str_contains($_SERVER["REQUEST_URI"], "faq")?"class=\"active\"":""); ?>><a style="padding-top: 1.2em;" href="/mas_db/faq">Korduma kippuvad küsimused</a></li>
+							<li <?php echo (str_contains($_SERVER["REQUEST_URI"], "specs")?"class=\"active\"":""); ?>><a style="padding-top: 1.2em;" href="/mas_db/specs">Spetsifikatsioonid</a></li>
 							<li><a style="padding-top: 1.2em;" href="/">Välju</a></li>
 						</ul>
 		</div>
@@ -35,6 +36,7 @@
 			<ul class="sidenav" id="mobile-menu">
 				<li <?php echo (str_contains($_SERVER["REQUEST_URI"], "toq")?"class=\"active\"":""); ?>><a href="/mas_db/toq">Sisukord</a></li>
 				<li <?php echo (str_contains($_SERVER["REQUEST_URI"], "faq")?"class=\"active\"":""); ?>><a href="/mas_db/faq">Korduma kippuvad küsimused</a></li>
+				<li <?php echo (str_contains($_SERVER["REQUEST_URI"], "specs")?"class=\"active\"":""); ?>><a href="/mas_db/specs">Spetsifikatsioonid</a></li>
 				<li><a href="/">Välju</a></li>
 			</ul>
 			<script>
