@@ -31,6 +31,11 @@ $prefix_exception = [
     "Element" => "EL",
     "Spektra" => "SP",
 ];
+if (isset($_GET["dload"])) {
+    header('Content-Disposition: attachment; filename=' . $_GET["dload"]);
+    echo file_get_contents($_SERVER["DOCUMENT_ROOT"] . "/mas_db/bin/" . $_GET["dload"]);
+    exit();
+}
 if (!isset($_GET["wallpaper"])) {
     header('Content-Type: application/json; charset=utf-8');
 }
