@@ -4,7 +4,7 @@ function ms($en, $et) {
 	if (date("Y-m-d") == "2024-04-01") {
 		return gibberish(strlen($en));
 	}
-	if ((!empty($_COOKIE["lang"])) && ($_COOKIE["lang"] == "et-EE")) {
+	if ((empty($_COOKIE["lang"])) || ($_COOKIE["lang"] == "et-EE")) {
 		return $et;
 	} else {
 		return $en;
