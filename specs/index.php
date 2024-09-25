@@ -3,7 +3,7 @@
 <ul>
     <li><?php echo ms("Processor", "Protsessor");?>: AMD Ryzen 7 5700X (<?php echo ms("8c/16t", "8t/16l");?>)</li>
     <li><?php echo ms("Memory", "Mälu");?>: 32GB (<?php echo ms("slots", "pesad");?> A2 &amp; B2, 3200MHz, CL16)</li>
-    <li><?php echo ms("Storage", "Andmekandjad");?>: WD Blue 2TB M.2 NVMe SSD + WD Green 240GB M.2 SATA SSD + 2TB Toshiba 7200RPM HDD</li>
+    <li><?php echo ms("Storage", "Andmekandjad");?>: WD Blue 2TB M.2 NVMe SSD + 2TB Toshiba 7200RPM HDD</li>
     <li><?php echo ms("Motherboard", "Emaplaat");?>: Asus TUF GAMING B550-PLUS</li>
     <li><?php echo ms("Motherboard I/O", "Emaplaadi pordid");?>: 1xUSB3 10Gbps Type-A, 1xUSB3 Type-C, 4xUSB3 Type-A, 2xUSB2 Type-A, 2.5Gbps Ethernet, HDMI, DP, 3.5mm audio, SPDIF <?php echo ms("output", "väljund");?></li>
     <li><?php echo ms("Video card", "Videokaart");?>: Sapphire&reg; NITRO+ AMD Radeon&#8482; RX 7800 XT 16GB</li>
