@@ -16,15 +16,3 @@
     <li><?php echo ms("UPS", "Katkematu toiteallikas (UPS)");?>: Eaton 5E G2 2200</li>
     <li><?php echo ms("Modified UEFI boot logo", "Modifitseeritud UEFI buutimislogo");?>: <?= ms("Yes", "Jah"); ?> (<a href="/mas_db/images/BIOS_logo3.png"><?= ms("preview", "eelvaade") ?></a>)</li>
 </ul>
-<h3><?php echo ms("Laptop", "Sülearvuti");?></h3>
-<ul>
-    <li><?php echo ms("Processor", "Protsessor");?>: AMD Ryzen 7 5700U (8t/16l)</li>
-    <li><?php echo ms("Memory", "Mälu");?>: 16GB (8GB plaadil + 8GB SO-DIMM)</li>
-    <li><?php echo ms("Storage", "Andmekandja");?>: 512GB M.2 NVMe SSD</li>
-    <li><?php echo ms("Motherboard/model", "Emaplaat/mudel");?>: Asus Vivobook 15 OLED (M513UA)</li>
-    <li><?php echo ms("Video processing: Integrated", "Videoprotsessor: Integreeritud");?> AMD Radeon APU</li>
-    <li><?php echo ms("I/O", "Pordid");?>: USB3 Type-A, USB3 Type-C, 2xUSB2 Type-A, HDMI, 3.5mm audio, 65W <?php echo ms("power", "toide");?>, Micro-SD</li>
-    <li><?php echo ms("Battery", "Aku");?>: 42WH</li>
-    <li><?php echo ms("Display", "Ekraan");?>: 1x1920x1080@60Hz OLED</li>
-    <li><?php echo ms("Modified UEFI boot logo", "Modifitseeritud UEFI buutimislogo");?>: <?= ms("No", "Ei"); ?></li>
-</ul>
